@@ -1,0 +1,15 @@
+module arithmetic_operators;
+reg [3:0] i1,i2;
+initial begin
+	i1 = 4'h6;
+	i2 = 4'h3;
+	$display ("i1=%0d and i2=%0d", i1,i2);
+	$display ("%0d", i1+i2);
+	$display ("%0d", i1-i2);
+	$display("%d", i1*i2);
+	$display ("%0d", i1/i2);
+	$display ("%0d", i1**2);
+	$display ("%0d", i1%i2); 
+end
+endmodule
+
