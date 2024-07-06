@@ -6,7 +6,7 @@ reg y,
 initial
 begin
 a= 3'd5;
-b=3,b111
+b=3'b111
 y = a&&b;
 end
 
