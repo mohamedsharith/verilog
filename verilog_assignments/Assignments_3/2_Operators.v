@@ -6,8 +6,8 @@ reg [2:0]x;
 initial
 begin
 a=3'd5;
-b=3b111;
-x=alb;
+b=3'b111;
+x=a|b;
 end
 
 
