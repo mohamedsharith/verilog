@@ -39,3 +39,25 @@ module jk_ff(
         default: {q,qbar}<=2'bxx;
         endcase
 endmodule
+
+/* 
+`define SET 2'b10
+`define RESET 2'b01
+`define TOGGLE 2'b11
+`define HOLD 2'b00
+
+module jk_flip_flop (
+    input clk,
+    input j, k,
+    output reg q
+);
+    always @(posedge clk) begin
+        case ({j, k})
+            `SET: q <= 1;
+            `RESET: q <= 0;
+            `TOGGLE: q <= ~q;
+            `HOLD: q <= q;
+        endcase
+    end
+endmodule
+*/
