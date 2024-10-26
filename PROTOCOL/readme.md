@@ -1,0 +1,1 @@
+This folder contains the Verilog code and testbench for verifying an APB (Advanced Peripheral Bus) to SRAM (Static Random Access Memory) interface. The project focuses on ensuring data integrity, timing requirements, and correct operation of read/write transactions between the APB master and SRAM slave
